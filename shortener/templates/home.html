@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
-<form style="width: 62%;"> <!--Modify to suit application-->
+<form style="width: 62%;" method="POST" novalidate> <!--Modify to suit application-->
+    {% csrf_token %}
     <!--Text input-->
     <label for='long_url' class="form-label">Enter your webiste URL to recieve a short URL:</label>
     <input class="form-control" type='text' id='long_url' name='long_url'><br>

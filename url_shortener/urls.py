@@ -23,16 +23,17 @@ from shortener.views import *
 router = routers.DefaultRouter()
 
 router.register(r'urls', urlsViewSet)
-
-
-urlpatterns = [
-    path('', HomePageView.as_view(), name='home', include(router.urls), include('rest_framework.urls'))
-]
+# router.register(r'home', HomePageView.as_view())
 
 # urlpatterns = [
-#     path('', include(router.urls)),
-#     path('api/', include('rest_framework.urls')) 
+#     path('', HomePageView.as_view(), name='home', include(router.urls), include('rest_framework.urls'))
 # ]
+
+urlpatterns = [
+    path('', include(router.urls)),
+    path('api/', include('rest_framework.urls')),
+    path('home', HomePageView.as_view())
+]
 
 
 
