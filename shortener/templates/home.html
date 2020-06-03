@@ -2,10 +2,10 @@
 {% block content %}
 <form style="width: 62%;"> <!--Modify to suit application-->
     <!--Text input-->
-    <label for='long_url'>Enter your webiste URL to recieve a short URL:</label>
+    <label for='long_url' class="form-label">Enter your webiste URL to recieve a short URL:</label>
     <input class="form-control" type='text' id='long_url' name='long_url'><br>
     <!--Submit input-->
-    <input class="btn btn-outline-info" type='submit' value='Submit'><br>
+    <button type="button submit" value="submit" class="btn btn-success">Submit</button>
 </form>
 {% if short_url %}
     <div>

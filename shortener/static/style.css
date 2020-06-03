@@ -1,3 +1,27 @@
-html {
-  background-color: aqua;
+body {
+  background-image: url("matrix.jpg");
+  background-color: #aadbf1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.matrix-image {
+  background-image: url("matrix.jpg");
+  background-color: #aadbf1;
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar{
+  width: 100%;
+  color: #109620;
+  background-color: black;
+}
+
+.form-label {
+  color: white;
+  padding-top: 200px;
+}
+
